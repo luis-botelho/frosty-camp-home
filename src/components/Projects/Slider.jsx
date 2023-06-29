@@ -6,24 +6,35 @@ import styled from 'styled-components';
 
 let data = [
     {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661324124/Yt-portfolio/ui5_mnvdaw.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        img : "https://ik.imagekit.io/alrrxu2emk/equipe/1.png?updatedAt=1688003464709",
+        name:"Matheus",
+        level:"CCO",
+        disc : "Experiente em e-sports, criativo e desenvolvedor",
+        social: "#"
     },
     {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661324074/Yt-portfolio/ui4_jku3ol.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        img : "https://ik.imagekit.io/alrrxu2emk/equipe/2.png?updatedAt=1688003467041",
+        name:"Breno",
+        level:"CEO",
+        disc : "Empreendedor apaixonado e líder"
     },
     {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661323981/Yt-portfolio/ui2_wtollo.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        img : "https://ik.imagekit.io/alrrxu2emk/equipe/3.png?updatedAt=1688003467861",
+        name:"Yuji",
+        level:"CM",
+        disc : "Experiente em comunidades, fraterno e gerenciador"
     },
     {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661323980/Yt-portfolio/ui3_akynn4.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        img : "https://ik.imagekit.io/alrrxu2emk/equipe/4.png?updatedAt=1688003464531",
+        name:"Luis",
+        level:"DEV",
+        disc : "Liderado pela tecnólogia, enérgico e genial"
     },
     {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        img : "https://ik.imagekit.io/alrrxu2emk/equipe/5.png?updatedAt=1688003467018",
+        name:"Lucas",
+        level:"DEV",
+        disc : "Gamer experiente, idealizador e prático"
     }
 ];
 
@@ -102,7 +113,7 @@ const Buttons = styled.div`
     height: 2rem;
     background-color: rgba(255, 255, 255, 0.100);
     cursor: pointer;
-    color: #01be96;
+    color: #333;
     border: none;
     position: absolute;
     top: 45%;

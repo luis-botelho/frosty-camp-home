@@ -7,9 +7,8 @@ const Projects = () => {
   return (
     <Container id='project'>
         <Zoom>
-            <h1>Recent <span className="green">Projects</span></h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto doloremque 
-            voluptate excepturi porro sed totam quis animi dolorum rerum earum.</p>
+            <h1>NOSSA EQUIPE</h1>
+            
         </Zoom>
         <Slide>
             <SliderComp/>
@@ -21,8 +20,9 @@ const Projects = () => {
 export default Projects;
 
 const Container = styled.div`
-    width: 80%;
+    width: 70%;
     max-width: 1280px;
+    background-color: #fff;
     margin: 0 auto;
     padding: 3rem 0;
     text-align: center;
@@ -32,6 +32,7 @@ const Container = styled.div`
     }
     h1{
         font-size: 1.9rem;
+        color:#333;
     }
 
     p{
@@ -42,6 +43,9 @@ const Container = styled.div`
         @media(max-width : 500px){
             width: 90%;
         }
+    }
+    @media(max-width :680px){
+        width: 90%;
     }
     
 `

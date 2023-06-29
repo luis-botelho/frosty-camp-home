@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Project = (props) => {
-    const { img, disc } = props.item;
+    const { img, name, level,disc } = props.item;
   return (
-    <Container className='project'>
+    <Container className='project' >
         <img src={img} alt="project" />
         <div className="disc">
-            <h1>Description</h1>
+            <h1>{name}<span> - {level}</span></h1>
             <p>{disc}
-            <a href="/">demo</a>
+            <a href="/">about</a>
             </p>
         </div>
     </Container>
@@ -20,6 +20,16 @@ export default Project;
 
 const Container = styled.div`
     height: 10rem;
+    /* width: 30rem; */
+      /* Add the blur effect */
+  
+
+  /* Full height */
+    height: 10rem;
+    background-image: url("https://uploads-ssl.webflow.com/64139613c0522c1dc98c52e5/6413975e05419edf48d393d9_OpVc.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #4e5156;
     margin: 0 0.5rem;
     padding: 0.5rem;
@@ -30,7 +40,7 @@ const Container = styled.div`
     img{
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit:contain;
         transition: transform 400ms ease-in-out;
     }
     .disc{
@@ -44,6 +54,7 @@ const Container = styled.div`
         transition: all 400ms ease-in-out;
         h1{
             font-size: 1rem;
+            color:white;
         }
     
         p{
