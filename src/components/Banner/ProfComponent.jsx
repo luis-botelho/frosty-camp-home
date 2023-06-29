@@ -23,6 +23,10 @@ export const ProfComponent = () => {
 export default ProfComponent;
 
 const Container = styled.div`
+ background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  /* background-size: cover; */
   background-image: linear-gradient(rgba(0, 0, 0, .82), rgba(0, 0, 0, .82)), url("https://uploads-ssl.webflow.com/64139613c0522c1dc98c52e5/6413975e05419edf48d393d9_OpVc.gif");
   height:rem;
   padding-top: 3rem;
