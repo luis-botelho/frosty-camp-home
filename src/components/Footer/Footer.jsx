@@ -19,26 +19,23 @@ const Footer = () => {
     <Container id="footer">
       <Profile>
         <Slide direction="left" delay={1}>
-          <h1>Portfolio</h1>
+          <h1>SOBRE A FROSTYCAMP</h1>
         </Slide>
         <div className="address">
           <Slide direction="left">
-            <h1>Address:</h1>
-          </Slide>
-          <Slide direction="left">
-            <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
+            <p>A FrostyCamp Studios é uma empresa especializada em desenvolver e fortalecer comunidades online por meio de estratégias inovadoras e personalizadas. Conosco, você descobrirá o verdadeiro potencial da sua comunidade.</p>
           </Slide>
         </div>
         <div className="links">
           <Slide direction="left">
-            <h1>Contact me directly:</h1>
+            <h1>Contact directly:</h1>
           </Slide>
           <div>
             <span>
               <FiPhoneCall />
             </span>
             <Slide direction="left">
-              <a href="tel:+4733378901">+47 333 78 901</a>
+              <a href="tel:+55 021 99807 2490">+55 021 99807 2490</a>
             </Slide>
           </div>
           <div>
@@ -48,13 +45,13 @@ const Footer = () => {
               </span>
             </Slide>
             <Slide>
-              <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
+              <a href="mailto:miladamiri@gmail.com">pressplay@frostycamp.com</a>
             </Slide>
           </div>
         </div>
         <div className="profiles">
           <Slide direction="left">
-            <h1>Check my profiles</h1>
+            <h1>Social</h1>
           </Slide>
           <div className="icons">
             <Zoom>
@@ -126,13 +123,15 @@ export default Footer;
 
 const Container = styled.div`
   margin-top: 2rem;
+  background-color: #edeff2;
+  color: #333;
   position: relative;
-  padding: 2rem 0;
-  width: 80%;
-  max-width: 1280px;
+  padding: 2rem ;
+  width: 100%;
+  /* max-width: 1280px; */
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   @media (max-width: 840px) {
     width: 90%;
   }
@@ -171,7 +170,7 @@ const Profile = styled.div`
       gap: 0.5rem;
       a {
         text-decoration: none;
-        color: lightgray;
+        color: #1f1919;
         :hover {
           color: orange;
         }

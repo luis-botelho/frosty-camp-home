@@ -20,7 +20,7 @@ function App() {
      
       {/* <Clients /> */}
       <LightColor>
-        {/* <Footer /> */}
+        <Footer />
       </LightColor>
     </Container>
   );
