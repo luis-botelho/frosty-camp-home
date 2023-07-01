@@ -5,7 +5,7 @@ import { Slide } from "react-awesome-reveal";
 
 const Jobs = () => {
   return (
-    <Container id="service">
+    <Container id="jobs">
       <Slide direction="down">
         <h4>
           O QUE FAZEMOS
@@ -23,7 +23,7 @@ const Jobs = () => {
             imgUrl={"https://uploads-ssl.webflow.com/64139613c0522c1dc98c52e5/64139cd569f925d4b05c4f81_4P4O.gif"}
           />
         </Slide>
-        <Slide direction="up">
+        <Slide direction="right">
           <Card
             title={"GROWTH"}
             disc={`O pacote completo de serviços para impulsionar o crescimento de sua comunidade, incluindo criação de conteúdo, desenvolvimento e execução de estratégias de crescimento e acompanhamento de métricas.`}
@@ -44,9 +44,11 @@ export default Jobs;
 const Container = styled.div`
   width: 80%;
   text-align: center;
-  max-width: 1280px;
+  max-width: 940px;
   margin: 0 auto;
   padding: 3rem 0;
+
+  
   
   @media (max-width: 840px) {
     width: 90%;
@@ -54,6 +56,11 @@ const Container = styled.div`
   h4{
     color: #fff;
     font-size: 2rem;
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 16px ;
   }
   h1 {
     padding-top: 1rem;

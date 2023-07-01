@@ -44,24 +44,36 @@ const Container = styled.div`
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3rem 2rem 15rem;
   background-color: #fff;
+  /* max-width: 940px; */
+    margin-left: auto;
+    margin-right: auto;
+
+  
   @media (max-width: 840px) {
     width: 90%;
   }
   h4{
-    color: #333;
-    font-size: 2rem;
+    color: #192024;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: Belleza, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
   }
   h1 {
     padding-top: 1rem;
   }
 `;
 const Cards = styled.div`
+ 
+
   display: grid;
-  padding: 10rem;
+  padding: 5rem 5rem 0rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
   gap: 2rem;
   
 `;

@@ -17,6 +17,7 @@ export default Card;
 const Container = styled.div`
   width: 100%;
   display: flex;
+  text-align: center;
   flex-direction: column;
   color: #fff;
   align-items: center;
@@ -25,15 +26,27 @@ const Container = styled.div`
   text-align: center;
     
   img {
-    height: 35rem;
+    width: 100%;
+    margin-bottom: 20px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
   }
 
   h1 {
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
     font-size: 1.2rem;
     padding-bottom: 1rem;
   }
 
   p {
-    
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
   }
 `;

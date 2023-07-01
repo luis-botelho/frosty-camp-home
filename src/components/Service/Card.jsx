@@ -23,17 +23,17 @@ const Container = styled.div`
   color: #333;
   align-items: center;
   border-radius:5px;
-  padding: 1rem;
   text-align: center;
-  border: #33333358 solid .5px;
-  height: 60vh;
+  border: #dcebf7 solid 1px;
+  /* height: 60vh; */
+  padding: 3rem;
 
   .logo{
     background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
     border-radius: 100%;
     width: 4rem;
     margin: .5rem;
-
+    
   }
   img {
     width: 4rem;
@@ -42,10 +42,24 @@ const Container = styled.div`
 
   h1 {
     font-size: 1.2rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
+    color: #676770;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+
   }
 
   p {
-    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #6a859c;
   }
 `;

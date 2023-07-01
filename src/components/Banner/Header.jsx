@@ -12,21 +12,21 @@ const Header = () => {
         <h1 className="brand-text">FROSTYCAMP</h1>
       </Logo>
       <Nav bar={bar}>
+        {/* <span>
+          <a href="#"></a>
+        </span> */}
         <span>
-          <a href="#">Home</a>
+          <a href="#jobs">Oque Fazemos</a>
         </span>
         <span>
-          <a href="#">Services</a>
+          <a href="#service">Como operamos</a>
         </span>
         <span>
-          <a href="#">Projects</a>
+          <a href="#footer">Contato</a>
         </span>
-        <span>
-          <a href="#">Testimonials</a>
-        </span>
-        <span>
+        {/* <span>
           <a href="#">Porfolio</a>
-        </span>
+        </span> */}
       </Nav>
       <div onClick={() => setBar(!bar)} className="bars">
         <div className="bar"></div>
@@ -102,12 +102,13 @@ const Logo = styled.div`
     font-size: 1.8rem;
   }
   h1 {
-    font-weight: 600;
+    font-weight: 300;
     color:#333;
     letter-spacing:4px;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 25px;
     
   }
 `;
@@ -126,6 +127,7 @@ const Nav = styled.div`
     height: ${(props) => (props.bar ? "100vh" : 0)};
     transition: height 400ms ease-in-out;
     overflow: hidden;
+    color: white;
     z-index: 100;
   }
   span {
