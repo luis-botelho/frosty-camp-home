@@ -1,21 +1,19 @@
-import React from "react";
+
 import styled from "styled-components";
-import { FaGithub } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
 
 export const ProfComponent = () => {
+ 
+
   return (
     <Container>
       <Texts>
-        
-        <h1>IMPULSIONANDO<br></br> COMUNIDADES</h1>
+        <h1>
+          IMPULSIONANDO<br></br> COMUNIDADES
+        </h1>
         <h3>CONECTANDO MUNDOS</h3>
-        
-        <button>INTRO</button>
-       
+
+        <a href="#about" >INTRO</a>
       </Texts>
-      
     </Container>
   );
 };
@@ -23,16 +21,17 @@ export const ProfComponent = () => {
 export default ProfComponent;
 
 const Container = styled.div`
- background-attachment: fixed;
+  background-attachment: fixed;
   background-position: 0 0, 50%;
   background-repeat: repeat repeat;
   background-size: auto, auto;
   opacity: 1;
-    text-align: center;
-    mix-blend-mode: normal;
-    border:1p solid #000;
+  text-align: center;
+  mix-blend-mode: normal;
+  border: 1p solid #000;
   background-color: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, .82), rgba(0, 0, 0, .82)), url("https://uploads-ssl.webflow.com/64139613c0522c1dc98c52e5/6413975e05419edf48d393d9_OpVc.gif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.82)),
+    url("https://uploads-ssl.webflow.com/64139613c0522c1dc98c52e5/6413975e05419edf48d393d9_OpVc.gif");
   padding-top: 10rem;
   padding-bottom: 15rem;
   width: 100%;
@@ -41,12 +40,8 @@ const Container = styled.div`
   /* z-index: 1; */
   @media (max-width: 840px) {
     width: 100%;
- 
-    
   }
   @media (max-width: 640px) {
-  
-    
   }
 `;
 const Texts = styled.div`
@@ -78,13 +73,13 @@ const Texts = styled.div`
     font-size: 25px;
     font-weight: 300;
     line-height: 25px;
-
   }
   p {
     font-weight: 300;
   }
-  button {
+ a{
     padding: 0.7rem 2rem;
+    text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
     cursor: pointer;
@@ -98,10 +93,9 @@ const Texts = styled.div`
     filter: drop-shadow(0px 10px 10px #01be9551);
     :hover {
       color: #2e9dff;
-    border-color: #2e9dff;
-
+      border-color: #2e9dff;
     }
   }
 `;
 
-// 
+//

@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import Jobs from "./components/Jobs/Jobs";
 import Projects from "./components/Projects/Projects";
 import Services from "./components/Service/Services";
+import About from "./components/About/About";
 function App() {
   return (
     <Container>
@@ -16,8 +17,8 @@ function App() {
       <Jobs/>
       <Services />
      
+        <About />
         <Projects />
-     
       {/* <Clients /> */}
       <LightColor>
         <Footer />

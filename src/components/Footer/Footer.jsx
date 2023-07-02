@@ -3,10 +3,11 @@ import styled from "styled-components";
 import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
-import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
-import { BsFacebook, BsSlack } from "react-icons/bs";
+import {  AiFillLinkedin, AiFillTwitterCircle, AiOutlineArrowUp } from "react-icons/ai";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
+import { FaInstagram, FaTwitter } from "react-icons/fa";
+
 
 const Footer = () => {
   const scrollUp = () => {
@@ -28,7 +29,7 @@ const Footer = () => {
         </div>
         <div className="links">
           <Slide direction="left">
-            <h1>Contact directly:</h1>
+            <h1>Entre em contato:</h1>
           </Slide>
           <div>
             <span>
@@ -49,48 +50,14 @@ const Footer = () => {
             </Slide>
           </div>
         </div>
-        <div className="profiles">
-          <Slide direction="left">
-            <h1>Social</h1>
-          </Slide>
-          <div className="icons">
-            <Zoom>
-              <span>
-                <a href="/">
-                  <AiFillGithub />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  <AiFillLinkedin />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  <BsFacebook />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  <BsSlack />
-                </a>
-              </span>
-            </Zoom>
-          </div>
-        </div>
+
         <Fade>
           <ArrowUp onClick={scrollUp}>
             <AiOutlineArrowUp />
           </ArrowUp>
         </Fade>
       </Profile>
-      <Form>
+      {/* <Form>
         <Slide direction="right">
           <form>
             <div className="name">
@@ -114,7 +81,47 @@ const Footer = () => {
             <button>Submit</button>
           </form>
         </Slide>
-      </Form>
+      </Form> */}
+      <Social>
+      <div className="profiles">
+          <Slide direction="left">
+            <h1>Social</h1>
+          </Slide>
+          <div className="icons">
+            <Zoom>
+              <span>
+                <a href="/">
+                  <FaInstagram/>
+              <p>Instagram</p>
+                </a>
+              </span>
+            </Zoom>
+            <Zoom>
+              <span>
+                <a href="/">
+                  <AiFillLinkedin />
+              <p>Linkedin</p>
+                </a>
+              </span>
+            </Zoom>
+            <Zoom>
+              <span>
+                <a href="/">
+                  <FaTwitter />
+              <p>Twitter</p>
+                </a>
+              </span>
+            </Zoom>
+            {/* <Zoom>
+              <span>
+                <a href="/">
+                  < />
+                </a>
+              </span>
+            </Zoom> */}
+          </div>
+        </div>
+      </Social>
     </Container>
   );
 };
@@ -126,12 +133,13 @@ const Container = styled.div`
   background-color: #edeff2;
   color: #333;
   position: relative;
-  padding: 2rem ;
+  padding: 2rem 5rem 2rem ;
   width: 100%;
   /* max-width: 1280px; */
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
+  font-weight: 300;
   @media (max-width: 840px) {
     width: 90%;
   }
@@ -143,6 +151,15 @@ const Container = styled.div`
 `;
 const Profile = styled.div`
   flex: 1;
+  h1{
+    color: #192024;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: Belleza, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+  }
   .address {
     padding: 1rem 0;
     h1 {
@@ -152,6 +169,12 @@ const Profile = styled.div`
     p {
       width: 60%;
       padding-top: 0.5rem;
+      margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #6a859c;
       @media (max-width: 650px) {
         width: 100%;
       }
@@ -172,48 +195,18 @@ const Profile = styled.div`
         text-decoration: none;
         color: #1f1919;
         :hover {
-          color: orange;
+          color: #2e9dff;
         }
       }
     }
   }
 
-  .profiles {
-    h1 {
-      font-size: 1.2rem;
-      padding: 1rem 0;
-    }
-
-    .icons {
-      display: flex;
-      align-items: center;
-
-      span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #000;
-        width: 2rem;
-        height: 2rem;
-        margin-right: 0.5rem;
-        border-radius: 50px;
-
-        :hover {
-          background-color: orange;
-        }
-
-        a {
-          margin-top: 0.2rem;
-          color: #fff;
-        }
-      }
-    }
-  }
+  
 `;
 const ArrowUp = styled.div`
   width: 2rem;
   height: 2rem;
-  background-color: #01be96;
+  background-color: #00000013;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,20 +214,62 @@ const ArrowUp = styled.div`
   font-size: 1.3rem;
   font-weight: 700;
   margin-top: 2rem;
+  :hover{
+    background-color: #2e9dff;
+  }
   @media (max-width: 650px) {
     position: absolute;
     right: 3rem;
     top: 16rem;
   }
 `;
-const Form = styled.div`
+const Social = styled.div`
   flex: 1;
-  h1 {
-    font-size: 1.3rem;
-    padding-bottom: 0.7rem;
+  /* padding: 1rem; */
+    h1{
+    color: #192024;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: Belleza, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 2rem;
   }
+  .profiles {
+    .icons {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-items: start;
 
-  form {
+      
+      cursor: pointer;
+      p{
+        margin-left: 5px;
+        :hover {
+          color: #2e9dff;
+        }
+      }
+      a {
+          border-bottom: #6e6e6e solid .5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          justify-content: space-around;
+          margin-top: 0.2rem;
+          color: #333;
+          text-decoration: none;
+          
+        }
+        
+        
+        
+      }
+    }
+    
+
+  /* form {
     background-color: #191923;
     padding: 0.8rem;
     border-radius: 5px;
@@ -278,5 +313,5 @@ const Form = styled.div`
         filter: drop-shadow(0px 6px 9px #01be9551);
       }
     }
-  }
+  } */
 `;
