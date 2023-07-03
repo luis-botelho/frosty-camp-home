@@ -6,7 +6,7 @@ export const ProfComponent = () => {
 
   return (
     <Container>
-      <Texts>
+      <Texts className="texts">
         <h1>
           IMPULSIONANDO<br></br> COMUNIDADES
         </h1>
@@ -40,6 +40,15 @@ const Container = styled.div`
   /* z-index: 1; */
   @media (max-width: 840px) {
     width: 100%;
+    .texts h1{
+      font-size: 2rem;
+    }
+    .texts h3{
+      font-size: 1rem;
+    }
+    .texts a{
+      font-size: .5rem;
+    }
   }
   @media (max-width: 640px) {
   }
@@ -53,14 +62,14 @@ const Texts = styled.div`
   align-items: center;
   /* padding: 10rem; */
   h1 {
-    font-size: 5rem;
+    /* font-size: 5rem; */
     letter-spacing: 2px;
     color: #fff;
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 30px;
     font-family: Belleza, sans-serif;
-    font-size: 60px;
+    font-size: 3vw;
     font-weight: 300;
     line-height: 60px;
   }
@@ -70,7 +79,7 @@ const Texts = styled.div`
     text-transform: uppercase;
     margin-bottom: 40px;
     font-family: Belleza, sans-serif;
-    font-size: 25px;
+    font-size: 1vw;
     font-weight: 300;
     line-height: 25px;
   }
@@ -87,7 +96,7 @@ const Texts = styled.div`
     border: solid white 1px;
     border-radius: 4px;
     color: #fff;
-    font-size: 1rem;
+    font-size: .8vw;
     letter-spacing: 2px;
     font-weight: 500;
     filter: drop-shadow(0px 10px 10px #01be9551);
@@ -96,6 +105,7 @@ const Texts = styled.div`
       border-color: #2e9dff;
     }
   }
+  
 `;
 
 //

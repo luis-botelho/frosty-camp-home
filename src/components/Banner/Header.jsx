@@ -29,7 +29,9 @@ const Header = () => {
         </span> */}
       </Nav>
       <div onClick={() => setBar(!bar)} className="bars">
-        <div className="bar"></div>
+        <div className="bar">
+          
+        </div>
       </div>
     </Container>
   );

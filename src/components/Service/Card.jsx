@@ -27,7 +27,10 @@ const Container = styled.div`
   border: #dcebf7 solid 1px;
   /* height: 60vh; */
   padding: 3rem;
-
+  @media(max-width:840px){
+    border: none;
+    padding: 0;
+  }
   .logo{
     background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
     border-radius: 100%;
