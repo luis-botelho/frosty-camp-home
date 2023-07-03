@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <Container id='project'>
         <Zoom>
-            <h1>NOSSA EQUIPE</h1>
+            <h1>CHURUMELA</h1>
             
         </Zoom>
         <Slide>
