@@ -7,7 +7,7 @@ const Card = (props) => {
     <Container>
       <div className="logo">
         
-      <img src={imgUrl} alt="alogo" srcset="" />
+      <img src={imgUrl} alt="alogo" srcset=""  />
       </div>
       <h1>{title}</h1>
       <p>{disc}</p>
@@ -25,9 +25,12 @@ const Container = styled.div`
   border-radius:5px;
   text-align: center;
   border: #dcebf7 solid 1px;
+  background-color: #fff;
   /* height: 60vh; */
   padding: 3rem;
+  margin: .5rem;
 
+  
   /* .logo{
     background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
     border-radius: 100%;
@@ -36,9 +39,9 @@ const Container = styled.div`
     
   } */
   img {
-    width: auto;
-    height: 40vh;
     margin: 0 auto;
+    width: 80%;
+    height: 10%;
   }
 
   h1 {

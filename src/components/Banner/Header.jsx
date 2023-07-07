@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const Header = () => {
   const [bar, setBar] = useState(false);
+  // const [active, setActive] = useState(false);
   return (
     <Container bar={bar}>
       <Logo>
@@ -15,14 +16,14 @@ const Header = () => {
         {/* <span>
           <a href="#"></a>
         </span> */}
-        <span>
-          <a href="#jobs">Oque Fazemos</a>
+        <span >
+          <a style={{ color: !bar ? "black" : "white" }} onClick={() => setBar(!bar)} href="#jobs">Oque Fazemos</a>
         </span>
         <span>
-          <a href="#service">Como operamos</a>
+          <a style={{ color: !bar ? "black" : "white" }} onClick={() => setBar(!bar)} href="#service">Como operamos</a>
         </span>
         <span>
-          <a href="#footer">Contato</a>
+          <a style={{ color: !bar ? "black" : "white" }} onClick={() => setBar(!bar)} href="#footer">Contato</a>
         </span>
         {/* <span>
           <a href="#">Porfolio</a>
@@ -69,6 +70,7 @@ const Container = styled.div`
       padding: 0.5rem;
       z-index: 100;
       .bar {
+
         position: absolute;
         width: 100%;
         height: 2px;
@@ -129,11 +131,12 @@ const Nav = styled.div`
     height: ${(props) => (props.bar ? "100vh" : 0)};
     transition: height 400ms ease-in-out;
     overflow: hidden;
-    color: white;
+    /* color: white; */
     z-index: 100;
   }
   span {
     margin-left: 1rem;
+   
     a {
       color: #333;
       text-decoration: none;

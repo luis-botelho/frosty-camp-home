@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Card = (props) => {
   const { disc, title, info1, info2, info3, imgUrl } = props;
   return (
-    <Container>  
+    <Container className="card">  
       <img src={imgUrl} alt="alogo" srcset="" />
       <h1>{title}</h1>
       <p>{disc}</p>

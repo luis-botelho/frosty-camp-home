@@ -21,12 +21,17 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   color: #333;
+  background-color: #fff;
   align-items: center;
   border-radius:5px;
   text-align: center;
   border: #dcebf7 solid 1px;
   /* height: 60vh; */
   padding: 3rem;
+
+  
+
+
   @media(max-width:840px){
     border: none;
     padding: 0;
@@ -65,4 +70,5 @@ const Container = styled.div`
     line-height: 25px;
     color: #6a859c;
   }
+  
 `;

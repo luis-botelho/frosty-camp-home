@@ -3,11 +3,14 @@ import styled from "styled-components";
 import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
-import {  AiFillLinkedin, AiFillTwitterCircle, AiOutlineArrowUp } from "react-icons/ai";
+import {
+  AiFillLinkedin,
+  AiFillTwitterCircle,
+  AiOutlineArrowUp,
+} from "react-icons/ai";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 import { FaInstagram, FaTwitter } from "react-icons/fa";
-
 
 const Footer = () => {
   const scrollUp = () => {
@@ -24,7 +27,12 @@ const Footer = () => {
         </Slide>
         <div className="address">
           <Slide direction="left">
-            <p>A FrostyCamp Studios é uma empresa especializada em desenvolver e fortalecer comunidades online por meio de estratégias inovadoras e personalizadas. Conosco, você descobrirá o verdadeiro potencial da sua comunidade.</p>
+            <p>
+              A FrostyCamp Studios é uma empresa especializada em desenvolver e
+              fortalecer comunidades online por meio de estratégias inovadoras e
+              personalizadas. Conosco, você descobrirá o verdadeiro potencial da
+              sua comunidade.
+            </p>
           </Slide>
         </div>
         <div className="links">
@@ -83,34 +91,34 @@ const Footer = () => {
         </Slide>
       </Form> */}
       <Social>
-      <div className="profiles">
+        <div className="profiles">
           <Slide direction="left">
             <h1>Social</h1>
           </Slide>
           <div className="icons">
             <Zoom>
-              <span>
-                <a href="/">
-                  <FaInstagram/>
-              <p>Instagram</p>
-                </a>
-              </span>
+              {/* <span className="icon"> */}
+              <a href="/">
+                <FaInstagram />
+                <p>Instagram</p>
+              </a>
+              {/* </span> */}
             </Zoom>
             <Zoom>
-              <span>
-                <a href="/">
-                  <AiFillLinkedin />
-              <p>Linkedin</p>
-                </a>
-              </span>
+              {/* <span className="icon"> */}
+              <a href="/">
+                <AiFillLinkedin />
+                <p>Linkedin</p>
+              </a>
+              {/* </span> */}
             </Zoom>
             <Zoom>
-              <span>
-                <a href="/">
-                  <FaTwitter />
-              <p>Twitter</p>
-                </a>
-              </span>
+              {/* <span className="icon"> */}
+              <a href="/">
+                <FaTwitter />
+                <p>Twitter</p>
+              </a>
+              {/* </span> */}
             </Zoom>
             {/* <Zoom>
               <span>
@@ -133,7 +141,7 @@ const Container = styled.div`
   background-color: #edeff2;
   color: #333;
   position: relative;
-  padding: 2rem 5rem 2rem ;
+  padding: 2rem 5rem 2rem;
   width: 100%;
   /* max-width: 1280px; */
   margin: 0 auto;
@@ -151,7 +159,7 @@ const Container = styled.div`
 `;
 const Profile = styled.div`
   flex: 1;
-  h1{
+  h1 {
     color: #192024;
     text-align: center;
     letter-spacing: 5px;
@@ -170,11 +178,11 @@ const Profile = styled.div`
       width: 60%;
       padding-top: 0.5rem;
       margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 25px;
-    color: #6a859c;
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 25px;
+      color: #6a859c;
       @media (max-width: 650px) {
         width: 100%;
       }
@@ -194,14 +202,13 @@ const Profile = styled.div`
       a {
         text-decoration: none;
         color: #1f1919;
+        
         :hover {
           color: #2e9dff;
         }
       }
     }
   }
-
-  
 `;
 const ArrowUp = styled.div`
   width: 2rem;
@@ -214,7 +221,7 @@ const ArrowUp = styled.div`
   font-size: 1.3rem;
   font-weight: 700;
   margin-top: 2rem;
-  :hover{
+  :hover {
     background-color: #2e9dff;
   }
   @media (max-width: 650px) {
@@ -226,7 +233,7 @@ const ArrowUp = styled.div`
 const Social = styled.div`
   flex: 1;
   /* padding: 1rem; */
-    h1{
+  h1 {
     color: #192024;
     text-align: center;
     letter-spacing: 5px;
@@ -238,36 +245,34 @@ const Social = styled.div`
   }
   .profiles {
     .icons {
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-items: start;
+      /* display: flex; */
+      /* flex-direction: column; */
+      /* align-items: start; */
+      /* justify-items: start; */
+      padding: 5rem;
 
-      
       cursor: pointer;
-      p{
+      .icon {
+      }
+      p {
         margin-left: 5px;
         :hover {
           color: #2e9dff;
         }
       }
       a {
-          border-bottom: #6e6e6e solid .5px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          justify-content: space-around;
-          margin-top: 0.2rem;
-          color: #333;
-          text-decoration: none;
-          
-        }
-        
-        
-        
+        border-bottom: #6e6e6e solid 0.5px;
+        display: flex;
+        /* align-items: center;
+        justify-content: center;
+        justify-content: space-around; */
+        /* width: 5vw; */
+        margin-top: 0.2rem;
+        color: #333;
+        text-decoration: none;
       }
     }
-    
+  }
 
   /* form {
     background-color: #191923;

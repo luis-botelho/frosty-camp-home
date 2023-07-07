@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import SliderComp from './Slider';
 import { Zoom } from 'react-awesome-reveal';
 
-const Projects = () => {
+const Members = () => {
   return (
     <Container id='project'>
         <Zoom>
@@ -17,7 +17,7 @@ const Projects = () => {
   )
 }
 
-export default Projects;
+export default Members;
 
 const Container = styled.div`
     width: 70%;
@@ -26,6 +26,7 @@ const Container = styled.div`
     padding: 3rem 0;
     text-align: center;
     position: relative;
+    
     @media(max-width: 840px){
         width: 90%;
     }

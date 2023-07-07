@@ -10,7 +10,7 @@
 }
 
 :root{
-  --lighter: #fff;
+  --lighter: gray;
   ---background: #192024;
 }
 
@@ -86,3 +86,4 @@ body{
       opacity: 1;
   }
 }
+
