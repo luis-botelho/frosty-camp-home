@@ -6,10 +6,9 @@ const Card = (props) => {
   return (
     <Container>
       <div className="logo">
-        
-      <img src={imgUrl} alt="alogo" srcset=""  />
+        <img src={imgUrl} alt="alogo" srcset="" />
       </div>
-      <h1>{title}</h1>
+      <h4>{title}</h4>
       <p>{disc}</p>
     </Container>
   );
@@ -18,33 +17,33 @@ const Card = (props) => {
 export default Card;
 
 const Container = styled.div`
+  width: 100%;
   display: flex;
+  text-align: center;
   flex-direction: column;
   color: #333;
   align-items: center;
-  border-radius:5px;
-  text-align: center;
+  border-radius: 5px;
   border: #dcebf7 solid 1px;
   background-color: #fff;
   /* height: 60vh; */
-  padding: 3rem;
-  margin: .5rem;
-
+  padding: 1rem 3rem;
+  margin-top: 2rem;
   
-  /* .logo{
-    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
-    border-radius: 100%;
-    width: 4rem;
-    margin: .5rem;
-    
-  } */
-  img {
-    margin: 0 auto;
-    width: 80%;
-    height: 10%;
+
+  @media(max-width:840px){
+    border: none;
+    padding: 0;
+    width:100%;
   }
 
-  h1 {
+  img {
+    margin: 1rem auto;
+    width: 80%;
+    /* height: 10%; */
+  }
+  
+  h4 {
     font-size: 1.2rem;
     padding: 1rem;
     color: #676770;
@@ -55,9 +54,8 @@ const Container = styled.div`
     font-size: 20px;
     font-weight: 300;
     line-height: 30px;
-
   }
-
+  
   p {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -65,5 +63,8 @@ const Container = styled.div`
     font-weight: 300;
     line-height: 25px;
     color: #6a859c;
+    width: 100%;
+    height:15rem;
+    overflow: scroll;
   }
-`;
+  `;

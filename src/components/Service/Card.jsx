@@ -9,7 +9,7 @@ const Card = (props) => {
         
       <img src="https://uploads-ssl.webflow.com/64139613c0522c1dc98c52e5/64139a0e134cf71ebb3f3a27_FROSTYCAMP_Prancheta%201-p-500.png" alt="alogo" srcset="" />
       </div>
-      <h1>{title}</h1>
+      <h4>{title}</h4>
       <p>{disc}</p>
     </Container>
   );
@@ -18,24 +18,26 @@ const Card = (props) => {
 export default Card;
 
 const Container = styled.div`
+  width: 100%;
   display: flex;
+  text-align: center;
   flex-direction: column;
   color: #333;
-  background-color: #fff;
   align-items: center;
   border-radius:5px;
-  text-align: center;
   border: #dcebf7 solid 1px;
   /* height: 60vh; */
-  padding: 3rem;
+  padding: 1rem 3rem;
+  background-color: #fff;
 
   
 
 
-  @media(max-width:840px){
+  /* @media(max-width:840px){
     border: none;
     padding: 0;
-  }
+    width:100%;
+  } */
   .logo{
     background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
     border-radius: 100%;
@@ -48,7 +50,7 @@ const Container = styled.div`
     margin: 0 auto;
   }
 
-  h1 {
+  h4 {
     font-size: 1.2rem;
     padding: 1rem;
     color: #676770;
@@ -63,12 +65,14 @@ const Container = styled.div`
   }
 
   p {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
     font-size: 14px;
     font-weight: 300;
     line-height: 25px;
     color: #6a859c;
+    width: 100%;
+    
   }
   
 `;

@@ -10,31 +10,35 @@ let data = [
         name:"Matheus",
         level:"CCO",
         disc : "Experiente em e-sports, criativo e desenvolvedor",
-        social: "#"
+        social: "https://www.linkedin.com/in/matheus-do-amaral-40a900145/"
     },
     {
         img : "https://ik.imagekit.io/alrrxu2emk/equipe/2.png?updatedAt=1688003467041",
         name:"Breno",
         level:"CEO",
-        disc : "Empreendedor apaixonado e líder"
+        disc : "Empreendedor apaixonado e líder",
+        social : "https://www.linkedin.com/in/brenocampi/"
     },
     {
         img : "https://ik.imagekit.io/alrrxu2emk/equipe/3.png?updatedAt=1688003467861",
         name:"Yuji",
         level:"CM",
-        disc : "Experiente em comunidades, fraterno e gerenciador"
-    },
-    {
-        img : "https://ik.imagekit.io/alrrxu2emk/equipe/4.png?updatedAt=1688003464531",
-        name:"Luis",
-        level:"DEV",
-        disc : "Liderado pela tecnólogia, enérgico e genial"
+        disc : "Experiente em comunidades, fraterno e gerenciador",
+        social : "https://www.linkedin.com/in/hugo-yuji-narimatsu-9a21b6243/"
     },
     {
         img : "https://ik.imagekit.io/alrrxu2emk/equipe/5.png?updatedAt=1688003467018",
         name:"Lucas",
         level:"DEV",
-        disc : "Gamer experiente, idealizador e prático"
+        disc : "Gamer experiente, idealizador e prático",
+        social:"https://www.linkedin.com/in/lucas-bizarro-a89924138/"
+    },
+    {
+        img : "https://ik.imagekit.io/alrrxu2emk/equipe/4.png?updatedAt=1688003464531",
+        name:"Luis",
+        level:"DEV",
+        disc : "Liderado pela tecnólogia, enérgico e genial",
+        social:"https://www.linkedin.com/in/luis-botelho/"
     }
 ];
 

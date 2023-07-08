@@ -1,8 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { GiEarthAmerica } from "react-icons/gi";
-import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 
 const Methods = () => {
@@ -11,13 +8,13 @@ const Methods = () => {
       <Slide direction="left">
         <Texts>
           
-          <h1>Nossa metodologia</h1>
+          <h4>Nossa metodologia</h4>
           <p>
           Aqui na FrostyCamp desenvolvemos uma metodologia de melhoria continua através de um acompanhamento próximo das campanhas e feedback bilateral de todos os resultados.
 
 Esse sistema nos permite acertar sua campanha mais rapidamente e ter maior previsibilidade de resultados.
           </p>
-          <a href="#Footer">Contato</a>
+          {/* <a href="#Footer">Contato</a> */}
           
         </Texts>
       </Slide>
@@ -37,8 +34,10 @@ export default Methods;
 
 const Container = styled.div`
   display: flex;
+  align-items: center;
+  align-content: flex-start;
   gap: 2rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   width: 80%;
   max-width: 1280px;
@@ -50,19 +49,22 @@ const Container = styled.div`
 
   @media (max-width: 640px) {
     flex-direction: column;
+    
   }
 `;
 const Texts = styled.div`
   flex: 1;
-  padding: 5rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  align-content: space-around;
-  h1 {
-    font-size: 3rem;
+  margin:1rem;
+  
+
+  h4 {
+    font-size: 30px;
     font-family: "Belleza", sans-serif;
-    text-transform: capitalize;
+    text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 1rem;
   }
@@ -71,11 +73,14 @@ const Texts = styled.div`
     font-weight: 300;
     font-family: "Belleza", sans-serif;
     letter-spacing: 2px;
-    text-transform: capitalize;
-    padding: 1rem;
+    /* text-transform: uppercase; */
+    padding: 0;
+    padding: 0;
+    
   }
 
   a{
+    flex:1;
     padding: 0.7rem 2rem;
     text-decoration: none;
     margin:1rem;

@@ -23,7 +23,7 @@ const Container = styled.div`
   align-items: center;
   border-radius:5px;
   padding: 1rem;
-  text-align: center;
+
     
   img {
     width: 100%;

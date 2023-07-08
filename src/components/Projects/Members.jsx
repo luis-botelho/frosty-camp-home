@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Project = (props) => {
-  const { img, name, level, disc } = props.item;
+  const { img, name, level, disc , social} = props.item;
   return (
     <Container className="project">
       <img src={img} alt="project" />
@@ -13,7 +13,7 @@ const Project = (props) => {
         </h1>
         <p>
           {disc}
-          <a href="/">about</a>
+          <a href={social} target="blank_">about</a>
         </p>
       </div>
     </Container>
@@ -68,7 +68,7 @@ const Container = styled.div`
       font-size: 0.8rem;
       a {
         margin-left: 0.4rem;
-        color: red;
+        color: #2e9dff;
       }
     }
   }
