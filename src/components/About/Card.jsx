@@ -29,6 +29,8 @@ const Container = styled.div`
   /* height: 60vh; */
   padding: 1rem 3rem;
   margin-top: 2rem;
+  margin-bottom: 2rem;
+  
   
 
   @media(max-width:840px){
@@ -58,13 +60,13 @@ const Container = styled.div`
   
   p {
     margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 14px;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
     font-weight: 300;
     line-height: 25px;
     color: #6a859c;
     width: 100%;
     height:15rem;
-    overflow: scroll;
+    overflow: auto;
   }
   `;

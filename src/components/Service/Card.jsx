@@ -9,7 +9,7 @@ const Card = (props) => {
         
       <img src="https://uploads-ssl.webflow.com/64139613c0522c1dc98c52e5/64139a0e134cf71ebb3f3a27_FROSTYCAMP_Prancheta%201-p-500.png" alt="alogo" srcset="" />
       </div>
-      <h4>{title}</h4>
+      <h1>{title}</h1>
       <p>{disc}</p>
     </Container>
   );
@@ -27,7 +27,7 @@ const Container = styled.div`
   border-radius:5px;
   border: #dcebf7 solid 1px;
   /* height: 60vh; */
-  padding: 1rem 3rem;
+  padding: 2rem 3rem;
   background-color: #fff;
 
   
@@ -50,7 +50,7 @@ const Container = styled.div`
     margin: 0 auto;
   }
 
-  h4 {
+  h1 {
     font-size: 1.2rem;
     padding: 1rem;
     color: #676770;

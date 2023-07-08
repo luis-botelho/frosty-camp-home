@@ -24,6 +24,7 @@ const Container = styled.div`
   border-radius:5px;
   padding: 1rem;
 
+
     
   img {
     width: 100%;

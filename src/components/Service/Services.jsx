@@ -41,7 +41,7 @@ const Container = styled.div`
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  padding: 0 2rem 10rem;
+  padding: 0 2rem 10rem ;
   /* background-color: #fff; */
   background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
   
@@ -52,8 +52,17 @@ const Container = styled.div`
   @media (max-width: 840px) {
     width: 90%;
     h4{
-      padding: .5rem;
-      /* font-size: 1rem; */
+      /* padding: .5rem;
+      font-size: 1rem; */
+      
+    }
+  }
+    @media (max-width: 650px) {
+    width: 90%;
+    h4{
+      /* padding: .5rem !important; */
+      font-size: 1.8rem !important;
+     
       
     }
   }
@@ -63,9 +72,9 @@ const Container = styled.div`
     letter-spacing: 5px;
     text-transform: uppercase;
     font-family: "Belleza", sans-serif;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 300;
-    padding:3rem;
+    padding:3rem 0;
   }
   p {
     margin: 0;

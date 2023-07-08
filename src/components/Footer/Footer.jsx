@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
 
         <Fade>
-          <ArrowUp onClick={scrollUp}>
+          <ArrowUp onClick={scrollUp} >
             <AiOutlineArrowUp />
           </ArrowUp>
         </Fade>
@@ -85,6 +85,7 @@ const Footer = () => {
             </Zoom>
           </div>
         </div>
+      <Fade><span>© 2023 FrostyCamp | ALL Rights Reserved</span></Fade>
       </Social>
     </Container>
   );
@@ -194,15 +195,25 @@ const ArrowUp = styled.div`
   :hover {
     background-color: #2e9dff;
   }
+  
   @media (max-width: 650px) {
-    /* position: absolute; */
-    bottom: -45;
-    right: 3rem;
-    top: 16rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align:center;
+    
   }
 `;
 const Social = styled.div`
   flex: 1;
+  @media (max-width: 650px) {
+    span{
+      margin-left:0 !important;
+      
+      font-size:1rem !important;
+    }
+  }
   h1 {
     color: #192024;
     text-align: center;
@@ -213,11 +224,16 @@ const Social = styled.div`
     font-weight: 300;
     margin-bottom: 2rem;
   }
+  span{
+    /* text-align: center; */
+    margin-left:11rem;
+    font-size:1.3rem;
+  }
   .profiles {
     .icons {
       padding: 1rem 10rem;
       /* display:flex; */
-      
+      margin-bottom: 2rem;
       justify-content: space-around;
       cursor: pointer;
       :hover {
@@ -227,6 +243,9 @@ const Social = styled.div`
         padding:0;
         a .icon{
           margin: 0;
+        }
+        span{
+          position: relative;
         }
       }
       p {
@@ -243,10 +262,10 @@ const Social = styled.div`
           font-size: 3rem;
         }
         p {
-          
           font-size:1.5rem;
         }
       }
+      
     }
   }
 `;
