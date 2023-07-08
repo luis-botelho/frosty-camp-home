@@ -56,6 +56,7 @@ const Container = styled.div`
     width: 90%;
     h4{
       padding: .5rem;
+      /* font-size: 1rem; */
       
     }
   }
@@ -65,7 +66,7 @@ const Container = styled.div`
     letter-spacing: 5px;
     text-transform: uppercase;
     font-family: "Belleza", sans-serif;
-    font-size: 30px;
+    font-size: 1rem;
     font-weight: 300;
     padding:3rem;
   }
