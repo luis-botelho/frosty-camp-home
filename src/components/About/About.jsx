@@ -50,7 +50,7 @@ const About = () => {
         </Fade>
         <Fade duration="1300">
           <Card
-            title={"Meaningful Growth"}
+            title={"Skate"}
             disc={`Oferecemos um serviço de growth completo e eficaz, que contempla desde a criação e execução de estratégias de growth, como o aumento do número de cliques, pesquisa de perfis nichados e estabelecimento de parcerias de divulgação, até o aumento de engajamento diário, com mais curtidas, respostas e compartilhamentos de conteúdo estratégico.
               Nosso serviço conta ainda com a projeção de crescimento mensal, utilizando KPI e OKR para definir metas claras e alcançáveis. Desse modo, nossos parceiros têm acesso a um trabalho pautado em objetivos tangíveis, que podem ser medidos e analisados para que os resultados sejam ainda mais efetivos.`}
             imgUrl={
