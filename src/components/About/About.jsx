@@ -1,11 +1,7 @@
 import React from "react";
-import { MdDesignServices } from "react-icons/md";
-import { FiCodesandbox } from "react-icons/fi";
-import { CgWebsite } from "react-icons/cg";
 import styled from "styled-components";
 import Card from "./Card";
-import { Fade, Zoom } from "react-awesome-reveal";
-import { forwardRef } from "react";
+import { Fade } from "react-awesome-reveal";
 
 const About = () => {
   return (
@@ -50,6 +46,41 @@ const About = () => {
         </Fade>
         <Fade duration="1300">
           <Card
+            title={"Community Building"}
+            disc={`
+              Criamos comunidades engajadas e ativas, que melhoram a reputação da empresa e aquisição de novos clientes. Entendemos que a falta de tempo e recursos para gerenciar as redes sociais e plataformas de comunidade, gera uma presença inconsistente além da falta de resposta dos membros.
+        
+              Cada comunidade é personalizada para cada projeto, focando em objetivos específicos e assuntos em comum.Para isso acontecer, utilizamos gestão e monitoramento contínuos da comunidade, incluindo a criação de conteúdo, interação com membros e acompanhamento de métricas de engajamento.
+        
+              Utilizando diversas estratégias, gerenciamos campanhas específicas para cada comunidade e seu nicho.
+              `}
+            imgUrl={
+              "https://uploads-ssl.webflow.com/64139613c0522c1dc98c52e5/64830dec2083cf1e58bc0f50_AdobeStock_581479342-p-1080.jpeg"
+            }
+          />
+        </Fade>
+        <Fade duration="1300">
+          <Card
+            title={"Meaningful Growth"}
+            disc={`Oferecemos um serviço de growth completo e eficaz, que contempla desde a criação e execução de estratégias de growth, como o aumento do número de cliques, pesquisa de perfis nichados e estabelecimento de parcerias de divulgação, até o aumento de engajamento diário, com mais curtidas, respostas e compartilhamentos de conteúdo estratégico.
+              Nosso serviço conta ainda com a projeção de crescimento mensal, utilizando KPI e OKR para definir metas claras e alcançáveis. Desse modo, nossos parceiros têm acesso a um trabalho pautado em objetivos tangíveis, que podem ser medidos e analisados para que os resultados sejam ainda mais efetivos.`}
+            imgUrl={
+              "https://uploads-ssl.webflow.com/64139613c0522c1dc98c52e5/64830f51eb52f0b64997f67c_1557.gif"
+            }
+          />
+        </Fade>
+        <Fade duration="1300">
+          <Card
+            title={"Meaningful Growth"}
+            disc={`Oferecemos um serviço de growth completo e eficaz, que contempla desde a criação e execução de estratégias de growth, como o aumento do número de cliques, pesquisa de perfis nichados e estabelecimento de parcerias de divulgação, até o aumento de engajamento diário, com mais curtidas, respostas e compartilhamentos de conteúdo estratégico.
+              Nosso serviço conta ainda com a projeção de crescimento mensal, utilizando KPI e OKR para definir metas claras e alcançáveis. Desse modo, nossos parceiros têm acesso a um trabalho pautado em objetivos tangíveis, que podem ser medidos e analisados para que os resultados sejam ainda mais efetivos.`}
+            imgUrl={
+              "https://uploads-ssl.webflow.com/64139613c0522c1dc98c52e5/64830f51eb52f0b64997f67c_1557.gif"
+            }
+          />
+        </Fade>
+        <Fade duration="1300">
+          <Card
             title={"Meaningful Growth"}
             disc={`Oferecemos um serviço de growth completo e eficaz, que contempla desde a criação e execução de estratégias de growth, como o aumento do número de cliques, pesquisa de perfis nichados e estabelecimento de parcerias de divulgação, até o aumento de engajamento diário, com mais curtidas, respostas e compartilhamentos de conteúdo estratégico.
               Nosso serviço conta ainda com a projeção de crescimento mensal, utilizando KPI e OKR para definir metas claras e alcançáveis. Desse modo, nossos parceiros têm acesso a um trabalho pautado em objetivos tangíveis, que podem ser medidos e analisados para que os resultados sejam ainda mais efetivos.`}
@@ -70,14 +101,17 @@ const Container = styled.div`
   text-align: center;
   margin: 0 auto;
   padding: 0 2rem 5rem;
-  background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+  background: radial-gradient(
+    circle at 18.7% 37.8%,
+    rgb(250, 250, 250) 0%,
+    rgb(225, 234, 238) 90%
+  );
   /* max-width: 940px; */
-  
 
   @media (max-width: 840px) {
     width: 90%;
-    h4{
-      padding: .5rem;
+    h4 {
+      padding: 0.5rem;
     }
   }
   h4 {
@@ -89,14 +123,17 @@ const Container = styled.div`
     font-size: 30px;
     font-weight: 300;
     padding: 1rem;
-
   }
   p {
     margin: 0;
     padding: 1rem;
   }
-  `;
+`;
 const Cards = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr 1fr;
+  grid-gap: 2rem;
 
   @media (max-width: 840px) {
     width: 90%;

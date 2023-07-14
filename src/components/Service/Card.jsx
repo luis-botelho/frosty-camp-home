@@ -18,7 +18,7 @@ const Card = (props) => {
 export default Card;
 
 const Container = styled.div`
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -43,6 +43,7 @@ const Container = styled.div`
     border-radius: 100%;
     width: 4rem;
     margin: .5rem;
+    filter: drop-shadow(0px 0px 10px #01be9570);
     
   }
   img {

@@ -31,6 +31,7 @@ const Container = styled.div`
     margin-bottom: 20px;
     overflow-clip-margin: content-box;
     overflow: clip;
+    filter: drop-shadow(0px 10px 10px #01be9570);
   }
 
   h1 {

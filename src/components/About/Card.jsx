@@ -28,8 +28,7 @@ const Container = styled.div`
   background-color: #fff;
   /* height: 60vh; */
   padding: 1rem 3rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem;
   
   
 

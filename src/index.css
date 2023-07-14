@@ -12,6 +12,7 @@
 :root{
   --lighter: gray;
   ---background: #192024;
+  --green:#01be96;
 }
 
 body{
