@@ -18,14 +18,9 @@ const About = () => {
       <Cards>
         <Slide direction="left">
           <Card
-            title={"Branding"}
+            title={"cachorro"}
             disc={`
-            A FrostyCamp Studios é um estúdio especializado em criação e crescimento de comunidades, dedicado a fornecer soluções inovadoras e eficazes para donos de negócios e entusiastas de tecnologia e jogos. Com uma equipe pequena e talentosa, a FrostyCamp Studios está comprometida em ajudar clientes a se conectar com seu público-alvo, promover engajamento e alcançar seus objetivos nos negócios.
-            
-            ‍
-            
-            Missão e Valores: Nossa missão é fornecer soluções de tecnologia de ponta e criar comunidades engajadas e bem-sucedidas para nossos clientes. Valorizamos a inovação, a paixão, a qualidade e a confiança, buscando sempre a excelência em nossos serviços.
-            ‍
+           
             
             Marca: A marca FrostyCamp Studios simboliza sofisticação, simplicidade e elegância, com cores em preto e branco e tipografia moderna e limpa. Nosso tom de voz é direto, profissional e confiante, refletindo nossa paixão pela inovação e experiência em fornecer soluções utilizando tecnologias avançadas.
             `}
