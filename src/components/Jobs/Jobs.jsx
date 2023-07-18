@@ -15,18 +15,18 @@ const Jobs = () => {
       <Cards>
         <Slide direction="left">
           <Card
-            title={"COMMUNITIES"}
-            disc={`Gerenciamento de redes sociais com conteúdo personalizado, automatização das interações nas redes e engajamento em tendências populares para aumentar a visibilidade e atrair crescimento orgânico`}
-            info1 ={"Ativações em Mídias sociais"}
-            info2 ={"Automação de conteúdo"}
-            info3={"Post e engajamento em Trending topics"}
+            title={"COMUNIDADES"}
+            disc={`Conectamos pessoas e ideias, criando comunidades autênticas e significativas.`}
+            info1 ={"Criação de comunidade"}
+            info2 ={"Criação de Conteúdo"}
+            info3 ={"Post e engajamento em Trending topics"}
             imgUrl={"https://uploads-ssl.webflow.com/64139613c0522c1dc98c52e5/64139cd569f925d4b05c4f81_4P4O.gif"}
           />
         </Slide>
         <Slide direction="right">
           <Card
             title={"GROWTH"}
-            disc={`O pacote completo de serviços para impulsionar o crescimento de sua comunidade, incluindo criação de conteúdo, desenvolvimento e execução de estratégias de crescimento e acompanhamento de métricas.`}
+            disc={`Com uma abordagem orientada por dados e focada em resultados, ajudamos você a se destacar e crescer.`}
             info1 ={"Pessoalidade e Suporte"}
             info2 ={"Ativação de Campanhas e Alvos estratégicos"}
             info3={"Conexão com outras comunidades"}

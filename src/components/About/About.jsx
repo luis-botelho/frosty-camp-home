@@ -7,85 +7,71 @@ const About = () => {
   return (
     <Container id="about">
       <Fade duration="1300">
-        <h4>overview</h4>
+        <h4>estratégias</h4>
       </Fade>
       <Cards>
         <Fade duration="1300">
           <Card
-            title={"Branding"}
+            title={"Ativações em Redes Sociais"}
             disc={`
-              A FrostyCamp Studios é um estúdio especializado em criação e crescimento de comunidades, dedicado a fornecer soluções inovadoras e eficazes para donos de negócios e entusiastas de tecnologia e jogos. Com uma equipe pequena e talentosa, a FrostyCamp Studios está comprometida em ajudar clientes a se conectar com seu público-alvo, promover engajamento e alcançar seus objetivos nos negócios.
               
-              ‍
-              
-              Missão e Valores: Nossa missão é fornecer soluções de tecnologia de ponta e criar comunidades engajadas e bem-sucedidas para nossos clientes. Valorizamos a inovação, a paixão, a qualidade e a confiança, buscando sempre a excelência em nossos serviços.
-              ‍
-              
-              Marca: A marca FrostyCamp Studios simboliza sofisticação, simplicidade e elegância, com cores em preto e branco e tipografia moderna e limpa. Nosso tom de voz é direto, profissional e confiante, refletindo nossa paixão pela inovação e experiência em fornecer soluções utilizando tecnologias avançadas.
+Ativações em mídias sociais atraem audiência ao fornecer conteúdo relevante, interações valiosas e informações úteis, aumentando a visibilidade e o engajamento.
               `}
             imgUrl={
-              "https://ik.imagekit.io/alrrxu2emk/imageedit_1_4208125788.png?updatedAt=1688250876076"
+              "https://ik.imagekit.io/frostycamp/2023_6.gif?updatedAt=1689646855306"
             }
           />
         </Fade>
 
         <Fade duration="1300">
           <Card
-            title={"Community Building"}
+            title={"Criação e Gerenciamento de Comunidades"}
             disc={`
-              Criamos comunidades engajadas e ativas, que melhoram a reputação da empresa e aquisição de novos clientes. Entendemos que a falta de tempo e recursos para gerenciar as redes sociais e plataformas de comunidade, gera uma presença inconsistente além da falta de resposta dos membros.
-        
-              Cada comunidade é personalizada para cada projeto, focando em objetivos específicos e assuntos em comum.Para isso acontecer, utilizamos gestão e monitoramento contínuos da comunidade, incluindo a criação de conteúdo, interação com membros e acompanhamento de métricas de engajamento.
-        
-              Utilizando diversas estratégias, gerenciamos campanhas específicas para cada comunidade e seu nicho.
+            Ativações em plataformas de comunidade, como o Discord, são estratégias eficazes de growth. Ao fornecer conteúdo relevante e interações autênticas, atraem e engajam os usuários, impulsionando a conversão de potenciais clientes e aumentando a visibilidade da marca.
               `}
             imgUrl={
-              "https://uploads-ssl.webflow.com/64139613c0522c1dc98c52e5/64830dec2083cf1e58bc0f50_AdobeStock_581479342-p-1080.jpeg"
+              "https://ik.imagekit.io/frostycamp/2022_9.gif?updatedAt=1689646850128"
             }
           />
         </Fade>
         <Fade duration="1300">
           <Card
-            title={"Community Building"}
+            title={"Revisão de SEO"}
             disc={`
-              Criamos comunidades engajadas e ativas, que melhoram a reputação da empresa e aquisição de novos clientes. Entendemos que a falta de tempo e recursos para gerenciar as redes sociais e plataformas de comunidade, gera uma presença inconsistente além da falta de resposta dos membros.
-        
-              Cada comunidade é personalizada para cada projeto, focando em objetivos específicos e assuntos em comum.Para isso acontecer, utilizamos gestão e monitoramento contínuos da comunidade, incluindo a criação de conteúdo, interação com membros e acompanhamento de métricas de engajamento.
-        
-              Utilizando diversas estratégias, gerenciamos campanhas específicas para cada comunidade e seu nicho.
+              
+A revisão de SEO é uma estratégia poderosa de growth, atraindo leitores ao otimizar o conteúdo do site, melhorar a visibilidade nos resultados de busca e aumentar atração de potenciais clientes. Com palavras-chave relevantes e técnicas de otimização, sua marca ganha destaque no cenário digital e conquista mais visitantes qualificados.
               `}
             imgUrl={
-              "https://uploads-ssl.webflow.com/64139613c0522c1dc98c52e5/64830dec2083cf1e58bc0f50_AdobeStock_581479342-p-1080.jpeg"
+              "https://ik.imagekit.io/frostycamp/2022_10.gif?updatedAt=1689646868322"
             }
           />
         </Fade>
         <Fade duration="1300">
           <Card
-            title={"Meaningful Growth"}
-            disc={`Oferecemos um serviço de growth completo e eficaz, que contempla desde a criação e execução de estratégias de growth, como o aumento do número de cliques, pesquisa de perfis nichados e estabelecimento de parcerias de divulgação, até o aumento de engajamento diário, com mais curtidas, respostas e compartilhamentos de conteúdo estratégico.
-              Nosso serviço conta ainda com a projeção de crescimento mensal, utilizando KPI e OKR para definir metas claras e alcançáveis. Desse modo, nossos parceiros têm acesso a um trabalho pautado em objetivos tangíveis, que podem ser medidos e analisados para que os resultados sejam ainda mais efetivos.`}
+            title={"Tragégo Pago"}
+            disc={`
+            O tráfego pago é uma estratégia forte de growth, atraindo leitores por meio de anúncios otimizados, melhorando a visibilidade e atraindo potenciais clientes. Com técnicas de SEO e segmentação precisa, sua marca ganha maior alcance e reconhecimento, aumentando o tráfego qualificado para o site.
+            `}
             imgUrl={
-              "https://uploads-ssl.webflow.com/64139613c0522c1dc98c52e5/64830f51eb52f0b64997f67c_1557.gif"
+              "https://ik.imagekit.io/frostycamp/2022_2.gif?updatedAt=1689646686071"
             }
           />
         </Fade>
         <Fade duration="1300">
           <Card
-            title={"Meaningful Growth"}
-            disc={`Oferecemos um serviço de growth completo e eficaz, que contempla desde a criação e execução de estratégias de growth, como o aumento do número de cliques, pesquisa de perfis nichados e estabelecimento de parcerias de divulgação, até o aumento de engajamento diário, com mais curtidas, respostas e compartilhamentos de conteúdo estratégico.
-              Nosso serviço conta ainda com a projeção de crescimento mensal, utilizando KPI e OKR para definir metas claras e alcançáveis. Desse modo, nossos parceiros têm acesso a um trabalho pautado em objetivos tangíveis, que podem ser medidos e analisados para que os resultados sejam ainda mais efetivos.`}
+            title={"Criação de Conteúdo"}
+            disc={`A criação de conteúdo é uma estratégia altamente eficaz de growth, atraindo leitores com conteúdo relevante e otimizado para SEO, aumentando a visibilidade nos resultados de busca e atraindo potenciais clientes. Com informações valiosas e técnicas de SEO bem aplicadas, sua marca se destaca no cenário digital, conquistando e engajando um público mais amplo e qualificado.`}
             imgUrl={
-              "https://uploads-ssl.webflow.com/64139613c0522c1dc98c52e5/64830f51eb52f0b64997f67c_1557.gif"
+              "https://ik.imagekit.io/frostycamp/2023_4.gif?updatedAt=1689646870623"
             }
           />
         </Fade>
         <Fade duration="1300">
           <Card
-            title={"Meaningful Growth"}
-            disc={`Oferecemos um serviço de growth completo e eficaz, que contempla desde a criação e execução de estratégias de growth, como o aumento do número de cliques, pesquisa de perfis nichados e estabelecimento de parcerias de divulgação, até o aumento de engajamento diário, com mais curtidas, respostas e compartilhamentos de conteúdo estratégico.
-              Nosso serviço conta ainda com a projeção de crescimento mensal, utilizando KPI e OKR para definir metas claras e alcançáveis. Desse modo, nossos parceiros têm acesso a um trabalho pautado em objetivos tangíveis, que podem ser medidos e analisados para que os resultados sejam ainda mais efetivos.`}
+            title={"Eventos Virtuais"}
+            disc={`Eventos virtuais são uma estratégia potente de growth, atraindo leitores com experiências interativas e conteúdo relevante, melhorando a visibilidade nos resultados de busca e atraindo potenciais clientes. Com técnicas de SEO aplicadas, sua marca ganha destaque no cenário digital, alcançando e envolvendo um público mais amplo e qualificado.`}
             imgUrl={
-              "https://uploads-ssl.webflow.com/64139613c0522c1dc98c52e5/64830f51eb52f0b64997f67c_1557.gif"
+              "https://ik.imagekit.io/frostycamp/2023_7.gif?updatedAt=1689646867788"
             }
           />
         </Fade>

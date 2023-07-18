@@ -17,10 +17,10 @@ const Header = () => {
           <a href="#"></a>
         </span> */}
         <span >
-          <a style={{ color: !bar ? "black" : "white" }} onClick={() => setBar(!bar)} href="#jobs">Oque Fazemos</a>
+          <a style={{ color: !bar ? "black" : "white" }} onClick={() => setBar(!bar)} href="#jobs">Sobre</a>
         </span>
         <span>
-          <a style={{ color: !bar ? "black" : "white" }} onClick={() => setBar(!bar)} href="#service">Como operamos</a>
+          <a style={{ color: !bar ? "black" : "white" }} onClick={() => setBar(!bar)} href="#service">Seviços</a>
         </span>
         <span>
           <a style={{ color: !bar ? "black" : "white" }} onClick={() => setBar(!bar)} href="#footer">Contato</a>

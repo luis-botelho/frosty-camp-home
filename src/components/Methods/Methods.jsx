@@ -10,9 +10,9 @@ const Methods = () => {
           
           <h4>Nossa metodologia</h4>
           <p>
-          Aqui na FrostyCamp desenvolvemos uma metodologia de melhoria continua através de um acompanhamento próximo das campanhas e feedback bilateral de todos os resultados.
+          A Frostycamp utiliza uma metodologia de testagem em vários canais diferentes, repetindo onde os resultados são mais bem-sucedidos com base em dados e análises.
 
-Esse sistema nos permite acertar sua campanha mais rapidamente e ter maior previsibilidade de resultados.
+          Permitindo uma abordagem orientada por resultados para impulsionar o crescimento das comunidades.
           </p>
           {/* <a href="#Footer">Contato</a> */}
           
@@ -21,7 +21,7 @@ Esse sistema nos permite acertar sua campanha mais rapidamente e ter maior previ
       <Slide direction="right">
         <Profile>
           <img
-            src="https://choranmidias.com.br/wp-content/uploads/2023/04/Apresentacao-Reuniao-Kick-off-1.png"
+            src="https://ik.imagekit.io/frostycamp/Escolha_de_canais-removebg-preview.png?updatedAt=1689646878249"
             alt="profile"
           />
         </Profile>
