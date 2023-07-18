@@ -12,7 +12,7 @@ export const ProfComponent = () => {
         </h1>
         <h3>CONECTANDO MUNDOS</h3>
 
-        <a href="#about" >INTRO</a>
+        <a href="#about" >BLOG</a>
       </Texts>
     </Container>
   );
