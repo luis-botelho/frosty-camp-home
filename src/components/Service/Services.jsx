@@ -42,6 +42,8 @@ const Container = styled.div`
   text-align: center;
   margin: 0 auto;
   padding: 0 2rem 10rem ;
+  position: relative;
+  z-index: -1;
   /* background-color: #fff; */
   background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
   
