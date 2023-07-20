@@ -43,11 +43,14 @@ export default Jobs;
 
 const Container = styled.div`
   width: 80%;
+  height:110vh;
   text-align: center;
   max-width: 940px;
   margin: 0 auto;
   padding: 3rem 0;
-
+  
+  position: relative;
+  z-index: -1;
   
   
   @media (max-width: 840px) {

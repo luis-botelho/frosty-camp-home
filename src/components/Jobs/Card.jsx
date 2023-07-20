@@ -23,11 +23,13 @@ const Container = styled.div`
   align-items: center;
   border-radius:5px;
   padding: 1rem;
+  
 
 
     
+  /* z-index:10; */
   img {
-    width: 100%;
+    width: 70%;
     margin-bottom: 20px;
     overflow-clip-margin: content-box;
     overflow: clip;

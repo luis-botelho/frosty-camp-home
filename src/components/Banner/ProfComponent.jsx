@@ -1,18 +1,17 @@
-
 import styled from "styled-components";
 
 export const ProfComponent = () => {
- 
-
   return (
     <Container>
-      <Texts className="texts">
+      <Texts className="texts" >
         <h1>
           IMPULSIONANDO<br></br> COMUNIDADES
         </h1>
         <h3>CONECTANDO MUNDOS</h3>
 
-        <a href="#about" >BLOG</a>
+
+        {/* <a href="#about">INTRO</a> */}
+
       </Texts>
     </Container>
   );
@@ -28,31 +27,39 @@ const Container = styled.div`
   opacity: 1;
   text-align: center;
   mix-blend-mode: normal;
-  border: 1p solid #000;
-  background-color: #fff;
+  border: 1px solid #000;
+  /* background-color: #fff; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.82)),
-  url("https://uploads-ssl.webflow.com/64139613c0522c1dc98c52e5/6413975e05419edf48d393d9_OpVc.gif");
-  padding-top: 10rem;
-  padding-bottom: 15rem;
+    url("https://uploads-ssl.webflow.com/64139613c0522c1dc98c52e5/6413975e05419edf48d393d9_OpVc.gif");
+  /* padding-top: 10rem;
+  padding-bottom: 15rem; */
   width: 100%;
+  height: 100vh;
+  padding: 15rem 0;
   /* max-width: 1280px; */
   /* margin: 0 auto; */
-  /* z-index: 1; */
+
   @media (max-width: 840px) {
     /* width: 100%; */
-    .texts h1{
+    .texts h1 {
       font-size: 3rem;
     }
-    .texts h3{
+    .texts h3 {
       /* font-size: 1rem; */
     }
-    .texts a{
+    .texts a {
       /* font-size: .5rem; */
     }
   }
   @media (max-width: 640px) {
+    .texts h1 {
+      font-size: 3rem;
+    }
+    .texts a {
+      /* font-size: .5rem; */
+    }
   }
-  `;
+`;
 const Texts = styled.div`
   /* display: flex; */
   opacity: 1;
@@ -60,7 +67,8 @@ const Texts = styled.div`
   flex-direction: column;
   margin: 0 auto;
   align-items: center;
-  /* padding: 10rem; */
+  padding: 1rem;
+  
   /* padding: 10rem; */
   h1 {
     /* font-size: 5rem; */
@@ -68,9 +76,11 @@ const Texts = styled.div`
     color: #fff;
     letter-spacing: 4px;
     text-transform: uppercase;
+    text-align: center;
+
     margin-bottom: 30px;
-    font-family: Belleza, sans-serif;
-    font-size: 3vw;
+    font-family: "Belleza", sans-serif;
+    font-size: 4vw;
     font-weight: 300;
     line-height: 60px;
   }
@@ -95,13 +105,18 @@ const Texts = styled.div`
     border: solid white 1px;
     border-radius: 4px;
     color: #fff;
+    position: inherit;
+    /* z-index: 10; */
     /* font-size: .8vw; */
+    /* display:${(props) => (props.bar ? "none" : "block")}; */
+    /* display:none; */
     letter-spacing: 2px;
     font-weight: 500;
+    
     filter: drop-shadow(0px 10px 10px #01be9551);
     :hover {
       color: #01be96;
-      border-color: #2e9dff;
+      border-color: #01be96;
     }
   }
   

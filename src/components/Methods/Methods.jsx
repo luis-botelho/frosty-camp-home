@@ -42,7 +42,8 @@ const Container = styled.div`
   width: 80%;
   max-width: 1280px;
   margin: 0 auto;
-  z-index: 1;
+  position: relative;
+  z-index: -1;
   @media (max-width: 840px) {
     width: 90%;
   }
