@@ -98,6 +98,7 @@ const Container = styled.div`
   background-color: #edeff2;
   color: #333;
   position: relative;
+  z-index:-1;
   padding: 2rem;
   width: 100%;
   margin: 0 auto;
@@ -117,6 +118,7 @@ const Container = styled.div`
 `;
 const Profile = styled.div`
   flex: 1;
+  
   @media (max-width: 840px) {
     /* width: 90%; */
     h1 {

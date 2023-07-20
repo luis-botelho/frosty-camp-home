@@ -1,38 +1,53 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-
-const Header = () => {
+const Header = ({ backgroundColor, textColor}) => {
   const [bar, setBar] = useState(false);
   // const [active, setActive] = useState(false);
   return (
-    <Container bar={bar}>
+    <Container bar={bar} backgroundColor={backgroundColor} textColor={textColor} > 
       <Logo>
-        <span className="green">
-        </span>
-        <h1 className="brand-text">FROSTYCAMP</h1>
+        <span className="green"></span>
+        <h1 className="brand-text" style={{ color: !bar ? textColor : "white" }}>FROSTYCAMP</h1>
       </Logo>
-      <Nav bar={bar}>
+      <Nav bar={bar} textColor={textColor} >
         {/* <span>
           <a href="#"></a>
         </span> */}
-        <span >
-          <a style={{ color: !bar ? "black" : "white" }} onClick={() => setBar(!bar)} href="#jobs">Sobre</a>
+
+        <span>
+          <a
+            style={{ color: !bar ? textColor : "white" }}
+            onClick={() => setBar(!bar)}
+            href="#jobs"
+          >
+            Oque Fazemos
+          </a>
         </span>
         <span>
-          <a style={{ color: !bar ? "black" : "white" }} onClick={() => setBar(!bar)} href="#service">Seviços</a>
+          <a
+            style={{ color: !bar  ? textColor : "white" }}
+            onClick={() => setBar(!bar)}
+            href="#service"
+          >
+            Como operamos
+          </a>
         </span>
         <span>
-          <a style={{ color: !bar ? "black" : "white" }} onClick={() => setBar(!bar)} href="#footer">Contato</a>
+          <a
+            style={{ color: !bar ? textColor : "white" }}
+            onClick={() => setBar(!bar)}
+            href="#footer"
+          >
+            Contato
+          </a>
         </span>
         {/* <span>
           <a href="#">Porfolio</a>
         </span> */}
-      </Nav>
-      <div onClick={() => setBar(!bar)} className="bars">
-        <div className="bar">
-          
-        </div>
+      </Nav >
+      <div onClick={() => setBar(!bar)} className="bars" >
+        <div className="bar"></div>
       </div>
     </Container>
   );
@@ -44,19 +59,23 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* max-width: 1280px; */
-  background-color: #fff;
+  background-color: ${(props) => props.backgroundColor};
   width: 100%;
   margin: 0 auto;
   padding: 1.5rem 0;
-  position: relative;
+  height:3rem;
+  /* position: absolute; */
+  position: fixed;
   animation: header 500ms ease-in-out;
-  
+  transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
+
   @media (max-width: 840px) {
     width: 100%;
   }
   .bars {
     display: none;
+    
+    
   }
   @media (max-width: 640px) {
     width: 100%;
@@ -70,18 +89,17 @@ const Container = styled.div`
       padding: 0.5rem;
       z-index: 100;
       .bar {
-
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: ${(props) => (props.bar ? "transparent" : "#333")};
+        background-color: ${(props) => (props.bar ? "transparent" : props.textColor)};
         transition: all 400ms ease-in-out;
         :before,
         :after {
           content: "";
           width: 100%;
           height: 2px;
-          background-color: #333;
+          background-color: ${(props) => (props.bar ? "white" : props.textColor)};
           position: absolute;
         }
         :before {
@@ -102,18 +120,18 @@ const Logo = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  
   span {
     font-size: 1.8rem;
   }
   h1 {
     font-weight: 300;
-    color:#333;
-    letter-spacing:4px;
+    color: #333;
+    letter-spacing: 4px;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 25px;
-    
   }
 `;
 const Nav = styled.div`
@@ -136,7 +154,7 @@ const Nav = styled.div`
   }
   span {
     margin-left: 1rem;
-   
+
     a {
       color: #333;
       text-decoration: none;
@@ -149,7 +167,8 @@ const Nav = styled.div`
         right: 0;
         bottom: -5px;
         height: 2px;
-        background-color: #333;
+        background-color: ${(props) => (props.textColor )};
+        /* background-color: #333; */
         transform: scale(0);
         transform-origin: right;
         transition: transform 400ms ease-in-out;

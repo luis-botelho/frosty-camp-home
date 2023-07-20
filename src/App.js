@@ -7,21 +7,49 @@ import Jobs from "./components/Jobs/Jobs";
 import Team from "./components/Projects/Team";
 import Services from "./components/Service/Services";
 import About from "./components/About/About";
+import React, { useState, useEffect } from "react";
+
 function App() {
+  const [headerColors, setHeaderColors] = useState({
+    backgroundColor: "transparent",
+    textColor: "white", // Change to the color you want for the text when scrolling
+  });
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const threshold = 100; // You can adjust the scroll threshold value as needed
+  
+      setHeaderColors({
+        backgroundColor: scrollY > threshold ? "#ffffff" : "transparent",
+        textColor: scrollY > threshold ? "#333" : "#ffffff",
+      });
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+  
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <Container>
       <Banner>
-        <Header />
+        <Header
+          backgroundColor={headerColors.backgroundColor}
+          textColor={headerColors.textColor}
+          
+        />
+        <ProfComponent />
       </Banner>
-      <ProfComponent />
       <Jobs />
       <Services />
       <Clients />
       <About />
       <Team />
-      <LightColor>
+      {/* <LightColor> */}
         <Footer />
-      </LightColor>
+      {/* </LightColor> */}
     </Container>
   );
 }
@@ -37,7 +65,7 @@ const Banner = styled.div`
     rgba(231, 241, 244, 1) 100%
   );
   height: auto;
-  position: fixed;
+
   width: 100%;
   z-index: 10;
   @media (max-width: 640px) {
