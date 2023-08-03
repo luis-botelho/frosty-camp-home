@@ -55,6 +55,7 @@ const Container = styled.div`
   
   @media (max-width: 840px) {
     width: 90%;
+    height: 100%;
   }
   h4{
     color: #fff;
@@ -62,7 +63,8 @@ const Container = styled.div`
     letter-spacing: 5px;
     font-size: 30px;
     font-weight: 300;
-    margin: 0;
+    /* margin: 0; */
+    margin-top: 1rem;
     margin-bottom: 16px ;
   }
   h1 {

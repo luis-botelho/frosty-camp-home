@@ -11,6 +11,7 @@ const Card = (props) => {
       </div>
       <h1>{title}</h1>
       <p>{disc}</p>
+      
     </Container>
   );
 };
@@ -19,17 +20,24 @@ export default Card;
 
 const Container = styled.div`
   /* width: 100%; */
+
   display: flex;
   text-align: center;
   flex-direction: column;
   color: #333;
   align-items: center;
+  justify-content: center;
   border-radius:5px;
   border: #dcebf7 solid 1px;
   /* height: 60vh; */
   padding: 2rem 3rem;
   background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 
+  &:hover{
+    transform: scale(1.2);
+  }
   
 
 
