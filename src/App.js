@@ -7,9 +7,14 @@ import Jobs from "./components/Jobs/Jobs";
 import Team from "./components/Projects/Team";
 import Services from "./components/Service/Services";
 import About from "./components/About/About";
+import ContactUs from "./components/ContactUs/ContactUs";
 import React, { useState, useEffect } from "react";
 
 function App() {
+  const [isContactUsModalOpen, setContactUsModalOpen] = useState(false);
+  const toggleContactUsModal = () => {
+    setContactUsModalOpen((prevOpen) => !prevOpen);
+  };
   const [headerColors, setHeaderColors] = useState({
     backgroundColor: "transparent",
     textColor: "white", // Change to the color you want for the text when scrolling
@@ -47,7 +52,10 @@ function App() {
       <Clients />
       <About />
       <Team />
+
+      {/* <ContactUs/> */}
       {/* <LightColor> */}
+
         <Footer />
       {/* </LightColor> */}
     </Container>
@@ -77,3 +85,4 @@ const Banner = styled.div`
 const LightColor = styled.div`
   background-color: #fff;
 `;
+

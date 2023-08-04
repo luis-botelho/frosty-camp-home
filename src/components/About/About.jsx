@@ -12,7 +12,7 @@ const About = () => {
       <Cards>
         <Fade duration="1300">
           <Card
-            title={"Ativações em Redes Sociais"}
+            title={"Engajamento em Redes Sociais"}
             disc={`
               
 Ativações em mídias sociais atraem audiência ao fornecer conteúdo relevante, interações valiosas e informações úteis, aumentando a visibilidade e o engajamento.
@@ -25,7 +25,7 @@ Ativações em mídias sociais atraem audiência ao fornecer conteúdo relevante
 
         <Fade duration="1300">
           <Card
-            title={"Criação e Gerenciamento de Comunidades"}
+            title={"Gerenciamento de Comunidades"}
             disc={`
             Ativações em plataformas de comunidade, como o Discord, são estratégias eficazes de growth. Ao fornecer conteúdo relevante e interações autênticas, atraem e engajam os usuários, impulsionando a conversão de potenciais clientes e aumentando a visibilidade da marca.
               `}
@@ -36,7 +36,7 @@ Ativações em mídias sociais atraem audiência ao fornecer conteúdo relevante
         </Fade>
         <Fade duration="1300">
           <Card
-            title={"Revisão de SEO"}
+            title={"Aprimoramento de SEO eficiente"}
             disc={`
               
 A revisão de SEO é uma estratégia poderosa de growth, atraindo leitores ao otimizar o conteúdo do site, melhorar a visibilidade nos resultados de busca e aumentar atração de potenciais clientes. Com palavras-chave relevantes e técnicas de otimização, sua marca ganha destaque no cenário digital e conquista mais visitantes qualificados.
@@ -48,7 +48,7 @@ A revisão de SEO é uma estratégia poderosa de growth, atraindo leitores ao ot
         </Fade>
         <Fade duration="1300">
           <Card
-            title={"Tragégo Pago"}
+            title={"Trafégo Pago Eficiente"}
             disc={`
             O tráfego pago é uma estratégia forte de growth, atraindo leitores por meio de anúncios otimizados, melhorando a visibilidade e atraindo potenciais clientes. Com técnicas de SEO e segmentação precisa, sua marca ganha maior alcance e reconhecimento, aumentando o tráfego qualificado para o site.
             `}
@@ -83,10 +83,10 @@ A revisão de SEO é uma estratégia poderosa de growth, atraindo leitores ao ot
 export default About;
 
 const Container = styled.div`
-  width: 100%;
+  /* width: 100vw; */
   text-align: center;
   margin: 0 auto;
-  padding: 0 2rem 5rem;
+  padding: 0rem 2rem 5rem 2rem;
   position: relative;
   z-index: -1;
   background: radial-gradient(
@@ -110,7 +110,7 @@ const Container = styled.div`
     font-family: "Belleza", sans-serif;
     font-size: 30px;
     font-weight: 300;
-    padding: 1rem;
+    padding: 3rem 2rem 0;
   }
   p {
     margin: 0;
@@ -118,14 +118,21 @@ const Container = styled.div`
   }
 `;
 const Cards = styled.div`
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows:  1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr ;
   grid-gap: 2rem;
+  width: 100%; */
+  /* height:400px; */
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  align-items: stretch;
 
   @media (max-width: 840px) {
     width: 90%;
     padding: 0;
+    display:block;
   }
   /* /* display: grid; */
   padding: 5rem 5rem 0rem;

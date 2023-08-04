@@ -22,6 +22,7 @@ const Container = styled.div`
   color: #fff;
   align-items: center;
   border-radius:5px;
+  margin-top: 5rem;
   padding: 1rem;
   
 
@@ -29,7 +30,7 @@ const Container = styled.div`
     
   /* z-index:10; */
   img {
-    width: 70%;
+    width: 90%;
     margin-bottom: 20px;
     overflow-clip-margin: content-box;
     overflow: clip;
@@ -53,4 +54,5 @@ const Container = styled.div`
     font-weight: 300;
     line-height: 25px;
   }
+  
 `;

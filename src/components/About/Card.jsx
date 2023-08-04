@@ -17,18 +17,20 @@ const Card = (props) => {
 export default Card;
 
 const Container = styled.div`
-  width: 100%;
-  display: flex;
+  width: 25vw;
+  /* display: flex; */
+
   text-align: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   color: #333;
-  align-items: center;
+  /* padding: 2rem; */
+  
   border-radius: 5px;
   border: #dcebf7 solid 1px;
   background-color: #fff;
-  /* height: 60vh; */
-  padding: 1rem 3rem;
-  margin: 2rem;
+  height: 87vh;
+  /* padding: 1rem ; */
+  margin-bottom: 2rem;
   
   
 
@@ -39,33 +41,37 @@ const Container = styled.div`
   }
 
   img {
-    margin: 1rem auto;
+    /* margin: 1rem auto; */
     width: 80%;
-    /* height: 10%; */
+    margin-top: 5px;
+    /* height: 30vh; */
   }
   
   h4 {
-    font-size: 1.2rem;
-    padding: 1rem;
+    /* margin: 1rem ; */
+    text-align: center;
+    /* padding: 2rem; */
     color: #676770;
     letter-spacing: 7px;
     text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 20px;
+    font-size: 1.3rem;
+    /* width: 80%; */
     font-weight: 300;
     line-height: 30px;
+    /* min-height: 90px; */
   }
   
   p {
-    margin-top: 10px;
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
+    /* margin-top: 10px; */
+    margin: 1rem;
+    /* padding: 2rem; */
+    /* margin-bottom: 2rem; */
+    font-size: 1rem;
     font-weight: 300;
     line-height: 25px;
     color: #6a859c;
-    width: 100%;
-    height:15rem;
+    /* width: 100%; */
+    height:20vh;
     overflow: auto;
   }
   `;

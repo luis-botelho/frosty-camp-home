@@ -1,17 +1,29 @@
 import styled from "styled-components";
+import ContactUs from "../ContactUs/ContactUs";
+import { useState } from "react";
 
 export const ProfComponent = () => {
+  const [isContactUsModalOpen, setContactUsModalOpen] = useState(false);
+  const toggleContactUsModal = () => {
+    setContactUsModalOpen((prevOpen) => !prevOpen);
+  };
+
   return (
     <Container>
-      <Texts className="texts" >
+      <Texts className="texts">
         <h1>
           IMPULSIONANDO<br></br> COMUNIDADES
         </h1>
         <h3>CONECTANDO MUNDOS</h3>
 
-
+        <ContactUsButton onClick={toggleContactUsModal}>
+          Contato
+        </ContactUsButton>
         {/* <a href="#about">INTRO</a> */}
-
+        <ContactUs
+          isOpen={isContactUsModalOpen}
+          onClose={toggleContactUsModal}
+        />
       </Texts>
     </Container>
   );
@@ -38,14 +50,14 @@ const Container = styled.div`
   padding: 15rem 0;
   /* max-width: 1280px; */
   /* margin: 0 auto; */
-
+  
   @media (max-width: 840px) {
     /* width: 100%; */
     .texts h1 {
       font-size: 3rem;
     }
     .texts h3 {
-      /* font-size: 1rem; */
+      font-size: 1.5rem;
     }
     .texts a {
       /* font-size: .5rem; */
@@ -53,10 +65,10 @@ const Container = styled.div`
   }
   @media (max-width: 640px) {
     .texts h1 {
-      font-size: 3rem;
+      font-size: 2rem;
     }
-    .texts a {
-      /* font-size: .5rem; */
+    .texts h3 {
+      font-size: 1rem;
     }
   }
 `;
@@ -68,7 +80,7 @@ const Texts = styled.div`
   margin: 0 auto;
   align-items: center;
   padding: 1rem;
-  
+
   /* padding: 10rem; */
   h1 {
     /* font-size: 5rem; */
@@ -90,12 +102,12 @@ const Texts = styled.div`
     text-transform: uppercase;
     margin-bottom: 40px;
     font-family: "Belleza", sans-serif;
-    /* font-size: 1vw; */
+    font-size: 2vw;
     font-weight: 300;
     line-height: 25px;
   }
-  
- a{
+
+  a {
     padding: 0.7rem 2rem;
     text-decoration: none;
     margin-left: 10px;
@@ -112,14 +124,37 @@ const Texts = styled.div`
     /* display:none; */
     letter-spacing: 2px;
     font-weight: 500;
-    
+
     filter: drop-shadow(0px 10px 10px #01be9551);
     :hover {
       color: #01be96;
       border-color: #01be96;
     }
   }
-  
+`;
+const ContactUsButton = styled.button`
+  padding: 0.7rem 2rem;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid white 1px;
+  border-radius: 4px;
+  color: #fff;
+  position: inherit;
+  /* z-index: 10; */
+  /* font-size: .8vw; */
+  /* display:${(props) => (props.bar ? "none" : "block")}; */
+  /* display:none; */
+  letter-spacing: 2px;
+  font-weight: 500;
+
+  filter: drop-shadow(0px 10px 10px #01be9551);
+  :hover {
+    color: #01be96;
+    border-color: #01be96;
+  }
 `;
 
 //
