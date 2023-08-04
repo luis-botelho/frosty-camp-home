@@ -17,7 +17,7 @@ export const ProfComponent = () => {
         <h3>CONECTANDO MUNDOS</h3>
 
         <ContactUsButton onClick={toggleContactUsModal}>
-          Contact Us
+          Contato
         </ContactUsButton>
         {/* <a href="#about">INTRO</a> */}
         <ContactUs
