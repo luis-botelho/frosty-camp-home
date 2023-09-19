@@ -42,7 +42,7 @@ const Jobs = () => {
 export default Jobs;
 
 const Container = styled.div`
-  width: 80%;
+  width: 50%;
   height:110vh;
   text-align: center;
   max-width: 940px;
@@ -51,7 +51,7 @@ const Container = styled.div`
   
   position: relative;
   z-index: -1;
-  
+ 
   
   @media (max-width: 840px) {
     width: 90%;
@@ -74,6 +74,6 @@ const Container = styled.div`
 const Cards = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  margin-top: 4rem;
+  margin-top: 1rem;
   gap: 1rem;
 `;

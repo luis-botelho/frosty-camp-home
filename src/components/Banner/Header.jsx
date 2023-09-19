@@ -37,9 +37,9 @@ const Header = ({ backgroundColor, textColor}) => {
           <a
             style={{ color: !bar ? textColor : "white" }}
             onClick={() => setBar(!bar)}
-            href="#footer"
+            href="#project"
           >
-            Contato
+            Nossa equipe
           </a>
         </span>
         {/* <span>

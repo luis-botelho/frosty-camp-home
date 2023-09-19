@@ -5,7 +5,7 @@ import styled from "styled-components";
 const ContactUs = ({ isOpen, onClose }) => {
   const [toSend, setToSend] = useState({
     first_name: "",
-    last_name: "",
+    project: "",
     email: "",
     message: "",
   });
@@ -16,9 +16,11 @@ const ContactUs = ({ isOpen, onClose }) => {
     send("service_wsukwwi", "template_vz9lizk", toSend, "L82I83H-_y7xnasGk")
       .then((response) => {
         console.log(response);
+        
       })
       .catch((err) => {
         console.log("failed", err);
+        
       });
   };
 
@@ -44,12 +46,12 @@ const ContactUs = ({ isOpen, onClose }) => {
             <div className="contact_box">
               <input
                 type="text"
-                name="last_name"
+                name="project"
                 // placeholder="Last Name"
-                value={toSend.last_name}
+                value={toSend.project}
                 onChange={handleChange}
               />
-              <label>Sobrenome</label>
+              <label>Projeto</label>
             </div>
             <div className="contact_box">
               <input
@@ -64,13 +66,14 @@ const ContactUs = ({ isOpen, onClose }) => {
             <div className="contact_box">
               <input
                 type="text"
-                name="massage"
+                name="message"
                 // placeholder="Message"
                 value={toSend.message}
                 onChange={handleChange}
               />
+              <label>Mensagem</label>
             </div>
-            <a href="#" onClick={SubmitEvent}>
+            <a href="#" onClick={SubmitEvent,onClose}>
               <span></span>
               <span></span>
               <span></span>
@@ -79,7 +82,7 @@ const ContactUs = ({ isOpen, onClose }) => {
             </a>
           </form>
         </Form>
-        <CloseButton onClick={onClose}>Close</CloseButton>
+        <CloseButton onClick={onClose}>X</CloseButton>
       </ModalContent>
     </ModalOverlay>
   );
@@ -279,6 +282,10 @@ const Form = styled.div`
 `;
 const CloseButton = styled.button`
   position: absolute;
+  cursor: pointer;
   top: 10px;
   right: 10px;
+  background-color: transparent;
+  color: #01be9570;
+  border:none;
 `;

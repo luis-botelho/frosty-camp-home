@@ -108,7 +108,7 @@ const Container = styled.div`
     letter-spacing: 5px;
     text-transform: uppercase;
     font-family: "Belleza", sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
     padding: 3rem 2rem 0;
   }
